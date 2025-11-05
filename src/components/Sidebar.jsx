@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useSidebar } from '@/contexts/SidebarContext';
 
@@ -8,84 +8,51 @@ const navigation = {
     path: '/',
     components: [
       { id: 'apresentacao-1', title: 'Apresentação do Curso' },
-      { id: 'apresentacao-2', title: 'Autonomia' },
-      { id: 'apresentacao-3', title: 'Estrutura do Curso' },
-      { id: 'apresentacao-4', title: 'Módulos' },
+      { id: 'modulo-2-objetivos', title: 'Objetivos do Módulo 2' },
+      { id: 'modulo-2-roteiro', title: 'Roteiro do PPDA' },
+      { id: 'modulo-2-passo', title: 'Passo a Passo' },
+      { id: 'modulo-2-ppda', title: 'Como Elaborar o Roteiro' },
+      { id: 'modulo-2-modelo', title: 'Modelo de PPDA' },
     ]
   },
-  'Módulo 1': {
-    path: '/modulo1',
+  'Matriz de Habilidades': {
+    path: '/matriz',
     components: [
-      { id: 'modulo-1-intro', title: 'O Módulo 1' },
-      { id: 'modulo-1-objetivos', title: 'Objetivos do Módulo' },
-      { id: 'modulo-1-situacao', title: 'Situação e Importância' },
-        { id: 'modulo-1-midia', title: 'Educação Financeira na Mídia' },
-        { id: 'modulo-1-video', title: 'A situação financeira dos Brasileiros' },
+      { id: 'matriz-intro', title: 'Matriz de Habilidades' },
+      
     ]
   },
-  'Educação Financeira': {
-    path: '/educacaofinanceira',
+  'Ferramentas Smart': {
+    path: '/smart',
     components: [
-      { id: 'ef-intro', title: 'Introdução' },
-      { id: 'ef-2', title: 'Educação Financeira no Ensino Fundamental' },
-      { id: 'ef-3', title: 'Matemática Financeira vs Educação Financeira' },
-      { id: 'ef-4', title: 'O programa da BEĨ Educação' },
-      { id: 'ef-5', title: 'Mais sobre o programa' },
+      { id: 'modulo-2-smart', title: 'Matriz SMART' },
+      { id: 'quiz-smart', title: 'Teste seus conhecimentos' },
+      
        
     ]
   },
-  'Metodologias': {
-    path: '/metodologias',
+  'Ferramentas 5WH2': {
+    path: '/5wh2',
     components: [
-      { id: 'met-1', title: 'Metodologias Ativas' },
-      { id: 'met-2', title: 'Aprendizagem Baseada em Projetos' },
-      { id: 'met-3', title: 'ABP - Resumo' },
-      { id: 'met-4', title: 'Pequenos Projetos Didáticos Ativos' },
-      { id: 'met-5', title: 'Fator de Mobilização' },
-      { id: 'met-6', title: 'Mais sobre mobilização' },
+      { id: 'ferramentas-5w2h', title: 'Ferramenta 5W2H' },
+      { id: 'ferramentas-5w2h-quiz', title: 'Teste seus conhecimentos!' },
+
     ]
   },
-  'Material Didático': {
-    path: '/material',
+  
+  'Encerramento': {
+    path: '/encerramento',
     components: [
-      { id: 'mat-1', title: 'Estrutura do Livro do Estudante' },
-      { id: 'mat-2', title: 'Estrutura do Caderno do Educador' },
-      { id: 'mat-3', title: 'Primeiros registros' },
-      { id: 'mat-5', title: 'Diário de Bordo' },
-      { id: 'mat-6', title: 'Padlet' },
-      { id: 'mat-7', title: 'Saiba Mais - Links' },
-    ]
-  },
-  'Diagnóstico': {
-    path: '/diagnostico',
-    components: [
-      { id: 'mat-4', title: 'Diagnóstico do perfil da turma' },
-       { id: 'mat-8', title: 'Encerramento do Módulo 1' },
-       { id: 'what', title: 'O que aprendi?' },
+      { id: 'encerramento-intro', title: 'Encerrando o Módulo 2' },
+      { id: 'encerramento-aprendi', title: 'O que aprendemos?' },
     ]
   },
 };
 
-export default function Sidebar({ forceOpen, onToggle }) {
+export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
   const { isViewed } = useSidebar();
   const router = useRouter();
-
-  // Efeito para controlar a sidebar externamente (pelo tutorial)
-  useEffect(() => {
-    if (forceOpen !== undefined) {
-      setIsOpen(forceOpen);
-    }
-  }, [forceOpen]);
-
-  const toggleSidebar = () => {
-    const newState = !isOpen;
-    setIsOpen(newState);
-    // Notificar o componente pai sobre a mudança
-    if (onToggle) {
-      onToggle(newState);
-    }
-  };
 
   const scrollToComponent = (id) => {
     const element = document.getElementById(id);
@@ -104,11 +71,7 @@ export default function Sidebar({ forceOpen, onToggle }) {
     } else {
       router.push(path);
     }
-    
-    // Só fechar a sidebar se não estiver sendo controlada externamente
-    if (forceOpen === undefined) {
-      setIsOpen(false);
-    }
+    setIsOpen(false);
   };
 
   return (
@@ -117,12 +80,7 @@ export default function Sidebar({ forceOpen, onToggle }) {
       {isOpen && (
         <div 
           className="fixed inset-0 bg-black/50 z-40 transition-opacity duration-300"
-          onClick={() => {
-            // Só permitir fechar clicando no overlay se não estiver sendo controlada externamente
-            if (forceOpen === undefined) {
-              setIsOpen(false);
-            }
-          }}
+          onClick={() => setIsOpen(false)}
         />
       )}
 
@@ -163,7 +121,7 @@ export default function Sidebar({ forceOpen, onToggle }) {
 
       {/* Botão de abrir/fechar */}
       <button
-        onClick={toggleSidebar}
+        onClick={() => setIsOpen(!isOpen)}
         className={`fixed top-1/2 transform -translate-y-1/2 z-50 transition-all duration-200 hover:scale-105
           ${isOpen 
             ? 'left-64' // quando sidebar está aberta

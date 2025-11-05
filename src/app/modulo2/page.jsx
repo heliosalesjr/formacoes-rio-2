@@ -1,20 +1,19 @@
 import Navbar from "@/components/Navbar"
-import HeroMain from "@/components/HeroMain"
+import Hero from "@/components/Hero"
 import Footer from "@/components/Footer"
 import ProgressBar from "@/components/ProgressBar"
 import Modulo2ContentSection from "@/components/Modulo2ContentSection"
 
 
-export default function Home() {
+export default function Modulo2() {
   return (
     <div className="flex min-h-screen flex-col">
       <Navbar />
       <ProgressBar />
       <main >
-      <HeroMain
-          title="Formação Material de Educação Financeira"
-
-          
+      <Hero
+        title="O Módulo 2"
+        subtitle="Como planejar aulas e orientar os estudantes a realizar os projetos em sala de aula"
         />
         
       <Modulo2ContentSection />
@@ -24,5 +23,4 @@ export default function Home() {
     </div>
   )
 }
-
 

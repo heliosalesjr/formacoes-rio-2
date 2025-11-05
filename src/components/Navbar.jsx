@@ -13,12 +13,12 @@ export default function Navbar() {
   const pathname = usePathname()
 
   const navLinks = [
-    { name: "Apresentação", href: "/" },
-    { name: "Módulo 1", href: "/modulo1" },
-    { name: "Educação Financeira", href: "/educacaofinanceira" },
-    { name: "Metodologias", href: "/metodologias" },
-    { name: "Material Didático", href: "/material" },
-    { name: "Diagnóstico", href: "/diagnostico" },
+    { name: "Móludo 2", href: "/" },
+    
+    { name: "Matriz de Habilidades", href: "/matriz" },
+    { name: "Ferramenta SMART", href: "/smart" },
+    { name: "Ferramenta 5W2H", href: "/5wh2" },
+    { name: "Encerramento", href: "/encerramento" },
   ]
 
   useEffect(() => {

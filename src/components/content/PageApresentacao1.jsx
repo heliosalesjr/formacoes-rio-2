@@ -18,68 +18,92 @@ const PageApresentacao1 = () => {
       { threshold: 0.5 }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
+    if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
   }, [markAsViewed]);
 
   return (
-    <div ref={ref} id="apresentacao-1" className="scroll-mt-20 rounded-xl bg-gradient-to-br from-white to-slate-50 p-8 shadow-2xl border border-slate-100 space-y-8">
-      <div className="grid gap-8 md:grid-cols-3 items-stretch">
-        {/* Conteúdo - 2/3 da largura */}
-        <div className="md:col-span-2 space-y-6 flex flex-col justify-center">
+    <div ref={ref} id="apresentacao-1" className="scroll-mt-20 space-y-16">
+
+      {/* === BLOCO TEXTO + IMAGEM === */}
+     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+        {/* Texto — 2/3 da largura */}
+        <div className="md:col-span-2 flex flex-col justify-center space-y-6">
           <div className="flex items-center gap-3">
             <div className="w-1 h-12 bg-gradient-to-b from-slate-500 to-blue-500 rounded-full"></div>
             <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-700 to-green-700 bg-clip-text text-transparent">
               Apresentação do Curso
             </h2>
           </div>
-          
+
           <p className="text-slate-700 text-lg leading-relaxed">
-            Este curso sobre a aplicação da Coleção{' '}
-            <span className="italic font-semibold text-slate-800">Aprendendo a Lidar com Dinheiro</span>{' '}
-            integra as ações de acompanhamento pedagógico promovidas pela{' '}
-            <span className="font-semibold">BEĨ Educação</span>, voltadas aos educadores 
-            e às educadoras da Secretaria de Estado de Educação de Mato Grosso que lecionam 
-            Matemática para turmas do 6º ao 8º ano do Ensino Fundamental e da 1ª série do Ensino Médio.
+            Dando seguimento ao curso Coleção{' '}
+            <span className="italic font-semibold text-slate-800">Aprendendo a Lidar com Dinheiro</span>, 
+            o Módulo 2 aprofunda o trabalho com os conceitos de educação financeira na prática pedagógica, 
+            explorando novas abordagens para o ensino da Matemática de forma significativa e contextualizada. 
+            Esta formação integra as ações de acompanhamento pedagógico promovidas pela{' '}
+            <span className="font-semibold">BEĨ Educação</span>, em parceria com a Secretaria de Estado de 
+            Educação do Rio de Janeiro, e é voltada aos professores do 4º e 5º ano do Ensino Fundamental I.
           </p>
-          
+
           <p className="text-slate-700 text-lg leading-relaxed">
-            Desenvolvido pela equipe pedagógica da{' '}
-            <span className="font-semibold ">BEĨ Educação</span>, em parceria com a 
-            equipe de tecnologia da{' '}
-            <span className="font-semibold">SEDUC</span>, o curso é oferecido no 
-            formato <span className="font-semibold text-slate-800">autoinstrucional</span> — ou seja, 
-            sem a presença de tutores para interação ou esclarecimento de dúvidas dos participantes.
+            O curso foi desenvolvido pela equipe pedagógica da{' '}
+            <span className="font-semibold">BEĨ Educação</span>, em parceria com a equipe de tecnologia da{' '}
+            <span className="font-semibold">SME Secretaria Municipal de Educação</span>, oferecido no formato{' '}
+            <span className="font-semibold text-slate-800">autoinstrucional</span>, permitindo ao educador 
+            aprender no seu próprio ritmo, de maneira prática, interativa e acessível, com recursos que estimulam 
+            a autonomia e o aprimoramento profissional.
           </p>
-          
-          
         </div>
-        
-        {/* Imagem - 1/3 da largura */}
-        <div className="flex items-center justify-center h-full">
-          <div className="relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 w-full h-full min-h-96">
+
+        {/* Imagem — 1/3 da largura */}
+        <div className="relative w-full h-auto flex items-stretch">
+          <div className="relative w-full h-full min-h-[350px] md:min-h-[100%] overflow-hidden rounded-xl shadow-lg">
             <Image
-              src="/livros_bei.png"
+              src="/capaz.png"
               alt="Imagem ilustrativa"
               fill
-              className="rounded-xl object-cover hover:scale-105 transition-transform duration-300"
+              className="object-cover object-center rounded-xl transition-transform duration-300 hover:scale-105"
             />
           </div>
         </div>
       </div>
 
-      {/* Seção do Vídeo */}
-      <div className="space-y-6 items-center">
-        
-         
-          <h3 className="text-3xl font-bold text-slate-700 justify-center text-center py-8">
-            Vídeo de Apresentação
-          </h3>
-       
-        
+
+      {/* === CARDS DE CONTEÚDO === */}
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition duration-300 flex items-center justify-center text-center">
+          <p className="text-slate-700 text-base leading-relaxed max-w-xs">
+            Este módulo amplia e aprofunda os conteúdos, fomentando o desenvolvimento profissional e apresentando novas estratégias para o ensino da educação financeira de maneira significativa e envolvente.
+          </p>
+        </div>
+
+        <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition duration-300 flex items-center justify-center text-center">
+          <p className="text-slate-700 text-base leading-relaxed max-w-xs">
+            Assim, contribui para transformar a sala de aula e fortalecer toda a comunidade escolar.
+          </p>
+        </div>
+
+        <div className="bg-gradient-to-br from-orange-50 to-yellow-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition duration-300 flex items-center justify-center text-center">
+          <p className="text-slate-700 text-base leading-relaxed max-w-xs">
+            Ao concluir este módulo, espera-se que cada educador se sinta ainda mais preparado para integrar a educação financeira ao cotidiano escolar.
+          </p>
+        </div>
+
+        <div className="bg-gradient-to-br from-pink-50 to-purple-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition duration-300 flex items-center justify-center text-center">
+          <p className="text-slate-700 text-base leading-relaxed max-w-xs">
+            Promovendo reflexões, hábitos e atitudes que contribuam para a formação de cidadãos mais conscientes, responsáveis e capazes de lidar com os desafios do mundo financeiro de forma crítica e autônoma.
+          </p>
+        </div>
+      </section>
+
+
+      {/* === VÍDEO === */}
+      <section>
+        <h3 className="text-4xl font-bold text-slate-600 text-center pb-8">
+          Vídeo de Apresentação
+        </h3>
+
         <div className="relative w-full pb-[56.25%] h-0 rounded-lg overflow-hidden shadow-lg">
           <iframe
             className="absolute top-0 left-0 w-full h-full"
@@ -88,7 +112,7 @@ const PageApresentacao1 = () => {
             allowFullScreen
           ></iframe>
         </div>
-      </div>
+      </section>
     </div>
   )
 }
