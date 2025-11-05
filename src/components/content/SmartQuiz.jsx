@@ -112,11 +112,11 @@ export default function SmartQuiz() {
       className="scroll-mt-20 rounded-xl bg-gradient-to-br from-white to-slate-50 p-8 shadow-2xl border border-slate-100"
     >
       <div className="flex items-center justify-center gap-3 mb-8">
-        <div className="w-1 h-12 bg-gradient-to-b from-green-500 to-blue-500 rounded-full" />
-        <h2 className="text-3xl font-bold text-center text-slate-700">
-          Quiz: Aplicando a ferramenta SMART
+        
+        <h2 className="text-2xl sm:text-4xl font-bold text-center bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
+          Quiz: Aplicando as metas SMART
         </h2>
-        <div className="w-1 h-12 bg-gradient-to-b from-blue-500 to-slate-500 rounded-full" />
+        
       </div>
 
       <div className="space-y-10 text-slate-700">

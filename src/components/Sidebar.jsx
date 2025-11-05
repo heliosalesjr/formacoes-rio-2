@@ -31,14 +31,7 @@ const navigation = {
        
     ]
   },
-  'Ferramentas 5WH2': {
-    path: '/5wh2',
-    components: [
-      { id: 'ferramentas-5w2h', title: 'Ferramenta 5W2H' },
-      { id: 'ferramentas-5w2h-quiz', title: 'Teste seus conhecimentos!' },
-
-    ]
-  },
+  
   
   'Encerramento': {
     path: '/encerramento',

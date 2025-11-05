@@ -70,14 +70,14 @@ export default function WhGame() {
     <div
       id="ferramentas-5w2h-quiz"
       ref={ref}
-      className="scroll-mt-20 rounded-xl bg-gradient-to-br from-white to-slate-50 p-8 shadow-2xl border border-slate-100 max-w-4xl mx-auto"
+      className="scroll-mt-20 rounded-xl bg-gradient-to-br from-white to-slate-50 p-8 shadow-2xl border border-slate-100 max-w-5xl mx-auto"
     >
       <div className="scroll-mt-20 flex items-center justify-center gap-3 mb-8">
-        <div className="w-1 h-12 bg-gradient-to-b from-blue-500 to-green-500 rounded-full" />
-        <h2 className="text-4xl font-bold text-center text-slate-700">
+        
+        <h2 className="text-2xl sm:text-4xl font-bold text-center bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
           Relacione as perguntas do 5W2H às suas funções
         </h2>
-        <div className="w-1 h-12 bg-gradient-to-b from-green-500 to-slate-500 rounded-full" />
+        
       </div>
 
       <div className="space-y-6 text-slate-700 text-lg leading-relaxed">

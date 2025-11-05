@@ -19,7 +19,7 @@ export default function Matriz() {
             
             <div className="flex justify-center mt-8">
               <Button asChild>
-                <Link href="/smart">Próxima Página: Ferramenta SMART</Link>
+                <Link href="/ferramentas">Próxima Página: Ferramentas de Planejamento</Link>
               </Button>
             </div>
           </div>

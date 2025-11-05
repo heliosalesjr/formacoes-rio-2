@@ -12,7 +12,7 @@ export default function Modulo2() {
       <main >
         <Hero
                 title="Matriz de Habilidades"
-                subtitle="Como funciona o programa “Aprendendo a lidar com dinheiro” da BEĨ Educação e a metodologia de aplicação do material"
+                subtitle="Quais temas são apresentados em cada livro, e como eles se conectam às Habilidades da BNCC"
                 />
        
         <MatrizContentSection />

@@ -13,11 +13,11 @@ export default function Navbar() {
   const pathname = usePathname()
 
   const navLinks = [
-    { name: "Móludo 2", href: "/" },
+    { name: "Apresentação", href: "/" },
     
     { name: "Matriz de Habilidades", href: "/matriz" },
-    { name: "Ferramenta SMART", href: "/smart" },
-    { name: "Ferramenta 5W2H", href: "/5wh2" },
+    { name: "Ferramentas de Planejamento", href: "/ferramentas" },
+    
     { name: "Encerramento", href: "/encerramento" },
   ]
 

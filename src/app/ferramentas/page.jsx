@@ -11,8 +11,8 @@ export default function Smart() {
       <ProgressBar />
       <main >
         <Hero
-                title="Ferramentas SMART"
-                subtitle="Como funciona o programa “Aprendendo a lidar com dinheiro” da BEĨ Educação e a metodologia de aplicação do material"
+                title="FERRAMENTAS DE PLANEJAMENTO"
+                subtitle="Como utilizar as ferramentas Metas SMART e 5W2H para planejar aulas e projetos"
                 />
         <SmartContentSection />
       </main>

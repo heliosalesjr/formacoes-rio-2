@@ -37,11 +37,11 @@ const WhIntro = () => {
       className="scroll-mt-20 rounded-xl bg-gradient-to-br from-white to-slate-50 p-8 shadow-2xl border border-slate-100"
     >
       <div className="flex items-center justify-center gap-3 mb-8">
-        <div className="w-1 h-12 bg-gradient-to-b from-blue-500 to-green-500 rounded-full" />
-        <h2 className="text-4xl font-bold text-center text-slate-700">
+        
+        <h2 className="text-4xl font-bold text-center text-slate-600">
           Ferramenta 5W2H: um modelo de plano de ação de atividades
         </h2>
-        <div className="w-1 h-12 bg-gradient-to-b from-green-500 to-slate-500 rounded-full" />
+        
       </div>
 
       {/* Imagem centralizada */}
@@ -58,7 +58,7 @@ const WhIntro = () => {
 
       <div className="text-slate-700 space-y-5 text-lg leading-relaxed">
         <p>
-          Se a ferramenta <strong>SMART</strong> ajuda o estudante a dizer o que ele quer,
+          Se as metas <strong>SMART</strong> ajudam o estudante a dizer o que ele quer,
           a ferramenta <strong>5W2H</strong> mostra como ele vai chegar lá.
           Trata-se de um modelo simples que pode ser aplicado a projetos escolares,
           metas pessoais, trabalhos em grupo e até mesmo à gestão de uma pequena
@@ -71,10 +71,11 @@ const WhIntro = () => {
 
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="what">
-            <AccordionTrigger className="justify-center text-center">
+            <AccordionTrigger className="justify-center text-center hover:text-green-600 transition-colors duration-300 hover:text-green-600 transition-colors duration-300">
               What? – O que será feito?
             </AccordionTrigger>
-            <AccordionContent>
+            <AccordionContent className="text-center flex flex-col items-center justify-center leading-relaxed px-4 py-4 text-slate-700">
+
               É a definição da ação. O foco deve ser direto.<br /><br />
               <strong>Exemplo:</strong> “Juntar R$ 80 para comprar uma mochila nova.”<br /><br />
               Aqui é importante evitar respostas amplas como “quero economizar”.
@@ -83,10 +84,11 @@ const WhIntro = () => {
           </AccordionItem>
 
           <AccordionItem value="why">
-            <AccordionTrigger className="justify-center text-center">
+            <AccordionTrigger className="justify-center text-center hover:text-green-600 transition-colors duration-300">
               Why? – Por que será feito?
             </AccordionTrigger>
-            <AccordionContent>
+            <AccordionContent className="text-center flex flex-col items-center justify-center leading-relaxed px-4 py-4 text-slate-700">
+
               Essa pergunta ativa o sentido.<br /><br />
               <strong>Exemplo:</strong> “Porque minha mochila está rasgada e preciso de uma nova para o próximo semestre.”<br /><br />
               Essa etapa é fundamental para fortalecer a motivação e o engajamento,
@@ -95,10 +97,11 @@ const WhIntro = () => {
           </AccordionItem>
 
           <AccordionItem value="where">
-            <AccordionTrigger className="justify-center text-center">
+            <AccordionTrigger className="justify-center text-center hover:text-green-600 transition-colors duration-300">
               Where? – Onde será feito?
             </AccordionTrigger>
-            <AccordionContent>
+            <AccordionContent className="text-center flex flex-col items-center justify-center leading-relaxed px-4 py-4 text-slate-700">
+
               Indica o local de execução ou o contexto.<br /><br />
               <strong>Exemplo:</strong> “Vou guardar o dinheiro em casa, dentro de uma caixinha que ninguém mexe.”<br /><br />
               Trabalha a noção de organização e segurança no uso do dinheiro.
@@ -106,10 +109,11 @@ const WhIntro = () => {
           </AccordionItem>
 
           <AccordionItem value="when">
-            <AccordionTrigger className="justify-center text-center">
+            <AccordionTrigger className="justify-center text-center hover:text-green-600 transition-colors duration-300">
               When? – Quando será feito?
             </AccordionTrigger>
-            <AccordionContent>
+            <AccordionContent className="text-center flex flex-col items-center justify-center leading-relaxed px-4 py-4 text-slate-700">
+
               Trata do tempo de execução.<br /><br />
               <strong>Exemplo:</strong> “Vou guardar R$ 10 por semana, começando hoje e terminando em oito semanas.”<br /><br />
               Aqui os alunos aprendem a dividir metas em pequenas etapas.
@@ -117,10 +121,11 @@ const WhIntro = () => {
           </AccordionItem>
 
           <AccordionItem value="who">
-            <AccordionTrigger className="justify-center text-center">
+            <AccordionTrigger className="justify-center text-center hover:text-green-600 transition-colors duration-300">
               Who? – Quem vai fazer?
             </AccordionTrigger>
-            <AccordionContent>
+            <AccordionContent className="text-center flex flex-col items-center justify-center leading-relaxed px-4 py-4 text-slate-700">
+
               Define o(s) responsável(is).<br /><br />
               <strong>Exemplo:</strong> “Eu sou o responsável por guardar o dinheiro, mas minha mãe vai me ajudar a separar o valor toda semana.”<br /><br />
               Uma boa oportunidade para reforçar autonomia e diálogo familiar.
@@ -128,10 +133,11 @@ const WhIntro = () => {
           </AccordionItem>
 
           <AccordionItem value="how">
-            <AccordionTrigger className="justify-center text-center">
+            <AccordionTrigger className="justify-center text-center hover:text-green-600 transition-colors duration-300">
               How? – Como será feito?
             </AccordionTrigger>
-            <AccordionContent>
+            <AccordionContent className="text-center flex flex-col items-center justify-center leading-relaxed px-4 py-4 text-slate-700">
+
               Aponta a estratégia e os meios.<br /><br />
               <strong>Exemplo:</strong> “Vou guardar parte da minha mesada e deixar de comprar doces durante esse tempo.”<br /><br />
               Trabalha planejamento e renúncia consciente.
@@ -139,10 +145,11 @@ const WhIntro = () => {
           </AccordionItem>
 
           <AccordionItem value="how-much">
-            <AccordionTrigger className="justify-center text-center">
+            <AccordionTrigger className="justify-center text-center hover:text-green-600 transition-colors duration-300">
               How much? – Quanto vai custar?
             </AccordionTrigger>
-            <AccordionContent>
+            <AccordionContent className="text-center flex flex-col items-center justify-center leading-relaxed px-4 py-4 text-slate-700">
+
               Refere-se ao custo total ou ao esforço necessário.<br /><br />
               <strong>Exemplo:</strong> “A mochila custa R$ 80. Já tenho R$ 20, preciso guardar mais R$ 60.”
             </AccordionContent>

@@ -37,11 +37,11 @@ const MatrizSmart = () => {
       className="scroll-mt-20 rounded-xl bg-gradient-to-br from-white to-slate-50 p-8 shadow-2xl border border-slate-100"
     >
       <div className="flex items-center justify-center gap-3 mb-8">
-        <div className="w-1 h-12 bg-gradient-to-b from-blue-500 to-green-500 rounded-full"></div>
-        <h2 className="text-4xl font-bold text-center text-slate-700">
-          Ferramenta SMART: um modelo para aperfeiçoar suas metas
+        
+        <h2 className="text-4xl font-bold text-center text-slate-600">
+          Metas SMART: um modelo para aperfeiçoar suas metas
         </h2>
-        <div className="w-1 h-12 bg-gradient-to-b from-green-500 to-slate-500 rounded-full"></div>
+        
       </div>
 
       <div className="text-slate-700 space-y-5 text-lg leading-relaxed">
@@ -50,8 +50,7 @@ const MatrizSmart = () => {
           “pensem no futuro” ou “economizem dinheiro”. Metas vagas geram
           frustração. Já as metas bem definidas ajudam a desenvolver senso de
           direção, responsabilidade e autonomia. Por isso, dentro do programa{" "}
-          <strong>Aprendendo a Lidar com o Dinheiro</strong>, apresentamos a
-          ferramenta SMART como uma metodologia prática para ensinar os
+          <strong>Aprendendo a Lidar com o Dinheiro</strong>, apresentamos as metas SMART como uma metodologia prática para ensinar os
           estudantes a formularem metas mais conscientes e realizáveis.
         </p>
 

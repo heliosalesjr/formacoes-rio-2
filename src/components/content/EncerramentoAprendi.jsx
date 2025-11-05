@@ -5,7 +5,7 @@ import { useSidebar } from '@/contexts/SidebarContext';
 import confetti from 'canvas-confetti'
 
 const checklistItems = [
-  'Entendi o passo a passo da elaboração de um PPDA.',
+  'Conheci os projetos sugeridos nos livros.',
   'Aprendi a interpretar a Matriz de habilidades (Quadro Geral das Etapas).',
   'Conheci as ferramentas  SMART e 5W2H e suas aplicações em sala e com os projetos dos alunos.',
   

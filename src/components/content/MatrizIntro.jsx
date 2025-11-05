@@ -36,20 +36,16 @@ const MatrizIntro = () => {
       className="scroll-mt-20 rounded-xl bg-gradient-to-br from-white to-slate-50 p-8 shadow-2xl border border-slate-100"
     >
       <div className="flex items-center justify-center gap-3 mb-8">
-        <div className="w-1 h-12 bg-gradient-to-b from-blue-400 to-green-500 rounded-full"></div>
-        <h2 className="text-4xl font-bold text-center text-slate-700">
+        
+        <h2 className="text-2xl md:text-4xl font-bold text-center bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
           Matriz de habilidades
         </h2>
-        <div className="w-1 h-12 bg-gradient-to-b from-green-500 to-blue-500 rounded-full"></div>
+        
       </div>
 
       <div className="text-slate-700 space-y-5 text-lg leading-relaxed">
         <p>
-          No quadro geral a seguir encontram-se os temas abordados pelo{" "}
-          <strong>Livro do Estudante</strong>, com as competências gerais e
-          específicas da <strong>BNCC</strong>, as habilidades de Matemática
-          desenvolvidas e sugestões de como articulá-las com o Projeto Coletivo
-          dos jovens.
+           No quadro geral a seguir encontram-se os Objetos de Conhecimento abordados pelo <strong>Livro do Estudante</strong>, com as habilidades de Matemática desenvolvidas, os temas de Educação Financeira e os Temas Interdisciplinares com Habilidades da <strong>BNCC</strong>.
         </p>
         <p>
           A <strong>BNCC</strong> define dez competências a serem trabalhadas e
@@ -108,8 +104,7 @@ const MatrizIntro = () => {
             className="cursor-pointer w-full max-w-3xl p-6 text-center rounded-xl shadow-md border border-blue-200 bg-gradient-to-r from-blue-100 to-blue-50 hover:from-blue-200 hover:to-blue-100 transition duration-300"
           >
             <p className="text-lg font-semibold text-blue-800">
-              Para saber mais sobre as Competências Gerais da BNCC, acesse esta
-              imagem.
+              Para saber mais sobre as Competências Gerais da BNCC, clique aqui para abrir um infográfico.
             </p>
           </div>
 

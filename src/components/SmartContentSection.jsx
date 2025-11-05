@@ -5,7 +5,8 @@ import FadeInWhenVisible from "./FadeInWhenVisible"
 
 import MatrizSmart from './content/MatrizSmart'
 import SmartQuiz from './content/SmartQuiz'
-
+import WhGame from './content/WhGame'
+import WhIntro from './content/WhIntro'
 
 const MetContentSection = () => {
   return (
@@ -19,10 +20,18 @@ const MetContentSection = () => {
           <FadeInWhenVisible>
             <SmartQuiz />
           </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <WhIntro />    
+          </FadeInWhenVisible>
+
+          <FadeInWhenVisible>
+            <WhGame />
+          </FadeInWhenVisible>
           {/* Next Page Button */}
           <div className="flex justify-center mt-8">
             <Button asChild>
-              <Link href="/5wh2">Próxima Página: Ferramenta 5W2H</Link>
+              <Link href="/encerramento">Próxima Página: Encerramento</Link>
             </Button>
           </div>
         </div>
