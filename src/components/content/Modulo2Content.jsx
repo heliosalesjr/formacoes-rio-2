@@ -94,7 +94,7 @@ export default function Modulo2Content() {
       >
         <Card className="w-full bg-white rounded-2xl shadow-2xl border border-blue-100">
           <CardHeader>
-            <CardTitle className="text-2xl sm:text-4xl font-bold text-center bg-gradient-to-r from-blue-600 via-blue-500 to-green-500 bg-clip-text text-transparent">
+            <CardTitle className="text-2xl sm:text-4xl font-bold text-center bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
               Atividades de Projeto do Livro
             </CardTitle>
 

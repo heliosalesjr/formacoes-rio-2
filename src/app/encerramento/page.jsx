@@ -11,7 +11,7 @@ export default function Diagnostico() {
       <main >
         <Hero
                 title="Encerramento"
-                subtitle="Como funciona o programa “Aprendendo a lidar com dinheiro” da BEĨ Educação e a metodologia de aplicação do material"
+                subtitle="Concluir o Módulo 2 e revisar o que aprendemos até aqui"
                 />
        
        <EncerramentoContentSection />

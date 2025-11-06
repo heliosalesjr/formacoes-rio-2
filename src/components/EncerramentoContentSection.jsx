@@ -3,6 +3,7 @@
 import FadeInWhenVisible from "./FadeInWhenVisible"
 import EncerramentoIntro from "./content/EncerramentoIntro"
 import EncerramentoAprendi from "./content/EncerramentoAprendi"
+import EncerramentoQuizModulo2 from "./content/EncerramentoQuizModulo2"
 
 export default function EncerramentoContentSection() {
     return (
@@ -17,7 +18,10 @@ export default function EncerramentoContentSection() {
                 <EncerramentoIntro />
             </FadeInWhenVisible>
           
-     
+            <FadeInWhenVisible>
+              <EncerramentoQuizModulo2 />
+            </FadeInWhenVisible>
+
             <FadeInWhenVisible>
               <EncerramentoAprendi />
             </FadeInWhenVisible>

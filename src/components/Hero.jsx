@@ -27,17 +27,25 @@ export default function Hero({ title, subtitle, buttonText, buttonHref = "#conte
       <div className="relative z-10 container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center space-y-8 text-center">
           
-          {/* Enhanced Title */}
+          {/* Enhanced Title with Custom Font */}
           <div className="space-y-6 max-w-6xl mx-auto">
-            <h1 className={`text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-thin tracking-widest text-white transition-all duration-1000 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-              <span className="drop-shadow-2xl">
+            <h1 
+              className={`text-4xl sm:text-5xl md:text-6xl  font-bold tracking-wider text-white transition-all duration-1000 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+              style={{ fontFamily: 'Rustica, sans-serif' }}
+              // OU use esta linha se quiser testar a Rustica:
+              // style={{ fontFamily: 'Rustica, sans-serif' }}
+            >
+              <span className="drop-shadow-2xl uppercase">
                 {title}
               </span>
             </h1>
             
             {/* Subtitle with Glassmorphism */}
             <div className={`backdrop-blur-sm bg-white/10 rounded-xl p-6 border border-white/20 max-w-[700px] mx-auto transition-all duration-1000 delay-200 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-              <p className="text-white/95 md:text-xl leading-relaxed">
+              <p 
+                className="text-white/95 md:text-2xl leading-relaxed"
+                
+              >
                 {subtitle}
               </p>
             </div>

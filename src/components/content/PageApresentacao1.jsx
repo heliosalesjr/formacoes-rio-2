@@ -12,7 +12,7 @@ const PageApresentacao1 = () => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          markAsViewed('apresentacao-1');
+          markAsViewed("apresentacao-1");
         }
       },
       { threshold: 0.5 }
@@ -23,10 +23,10 @@ const PageApresentacao1 = () => {
   }, [markAsViewed]);
 
   return (
-    <div ref={ref} id="apresentacao-1" className="scroll-mt-20 space-y-16">
+    <div  className="p-16 bg-white rounded-2xl shadow-2xl mx-auto max-w-5xl">
 
       {/* === BLOCO TEXTO + IMAGEM === */}
-     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+     <div ref={ref} id="apresentacao-1" className="scroll-mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
         {/* Texto — 2/3 da largura */}
         <div className="md:col-span-2 flex flex-col justify-center space-y-6">
           <div className="flex items-center gap-3">
@@ -71,7 +71,7 @@ const PageApresentacao1 = () => {
 
 
       {/* === CARDS DE CONTEÚDO === */}
-      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 py-16">
         <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition duration-300 flex items-center justify-center text-center">
           <p className="text-slate-700 text-base leading-relaxed max-w-xs">
             Este módulo amplia e aprofunda os conteúdos, fomentando o desenvolvimento profissional e apresentando novas estratégias para o ensino da educação financeira de maneira significativa e envolvente.

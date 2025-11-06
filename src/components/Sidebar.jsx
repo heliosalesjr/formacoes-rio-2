@@ -9,10 +9,10 @@ const navigation = {
     components: [
       { id: 'apresentacao-1', title: 'Apresentação do Curso' },
       { id: 'modulo-2-objetivos', title: 'Objetivos do Módulo 2' },
-      { id: 'modulo-2-roteiro', title: 'Roteiro do PPDA' },
-      { id: 'modulo-2-passo', title: 'Passo a Passo' },
-      { id: 'modulo-2-ppda', title: 'Como Elaborar o Roteiro' },
-      { id: 'modulo-2-modelo', title: 'Modelo de PPDA' },
+      { id: 'modulo-2-roteiro', title: 'Projetos desenvolvidos nos livros' },
+      { id: 'modulo-2-passo', title: 'Projetos do livro' },
+      { id: 'modulo-2-ppda', title: 'Atividades de Projeto do Livro' },
+      
     ]
   },
   'Matriz de Habilidades': {
@@ -22,11 +22,13 @@ const navigation = {
       
     ]
   },
-  'Ferramentas Smart': {
-    path: '/smart',
+  'Ferramentas de Planejamento': {
+    path: '/ferramentas',
     components: [
-      { id: 'modulo-2-smart', title: 'Matriz SMART' },
-      { id: 'quiz-smart', title: 'Teste seus conhecimentos' },
+      { id: 'modulo-2-smart', title: 'Metas SMART' },
+      { id: 'quiz-smart', title: 'Teste seus conhecimentos: Metas SMART' },
+      { id: 'ferramentas-5w2h', title: 'Ferramenta 5W2H' },
+      { id: 'ferramentas-5w2h-quiz', title: 'Teste seus conhecimentos: 5W2H' },
       
        
     ]
@@ -37,6 +39,7 @@ const navigation = {
     path: '/encerramento',
     components: [
       { id: 'encerramento-intro', title: 'Encerrando o Módulo 2' },
+      { id: 'modulo2-quiz', title: 'Teste seus conhecimentos sobre o Módulo 2' },
       { id: 'encerramento-aprendi', title: 'O que aprendemos?' },
     ]
   },
