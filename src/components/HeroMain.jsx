@@ -69,9 +69,17 @@ export default function HeroMain({
               <div className="h-1 w-6 bg-white/40 rounded-full" />
             </div>
 
+            {/* Subtitle - Módulo 2 */}
+            <h1
+              className="text-2xl sm:text-3xl font-thin text-white mt-3 tracking-wide"
+              style={{ fontFamily: "Open Sans, sans-serif" }}
+            >
+              Módulo 2
+            </h1>
+
             {/* Button */}
             {buttonText && (
-              <div className="pt-2">
+              <div className="pt-4">
                 <Button 
                   asChild 
                   size="lg" 
@@ -91,6 +99,7 @@ export default function HeroMain({
                 </Button>
               </div>
             )}
+
           </div>
 
           {/* Right Column - Floating Image */}
