@@ -17,51 +17,51 @@ const atividades4ano = [
     title: "Capítulo 1 — Exposição das profissões",
     content: `
 Os alunos fazem uma pesquisa sobre duas profissões diferentes, descrevendo suas funções e importância social. 
-A proposta estimula a valorização de todo tipo de trabalho e a compreensão das funções na sociedade.`,
+A proposta estimula a valorização de todo tipo de trabalho e a compreensão das funções na sociedade. (página 8)`,
   },
   {
     title: "Capítulo 1 — Pesquisa de preços",
     content: `
 O objetivo desta atividade é comparar os preços dos itens da padaria mencionados na aula com os preços reais de uma padaria local, 
-entendendo a dinâmica dos preços.`,
+entendendo a dinâmica dos preços. (página 12)`,
   },
   {
     title: "Capítulo 1 — Entrevistando um adulto",
     content: `
 Os alunos entrevistam um adulto sobre sua profissão, registrando as respostas em um roteiro de perguntas. 
-A ideia é compreender a rotina profissional e o valor social do trabalho, exercitando oralidade, escuta e escrita.`,
+A ideia é compreender a rotina profissional e o valor social do trabalho, exercitando oralidade, escuta e escrita. (página 25)`,
   },
   {
     title: "Capítulo 2 — Encarte de preços",
     content: `
 Os estudantes pesquisam preços de produtos ou alimentos para comparar valores e refletir sobre diferenças de custo e escolhas de consumo consciente, 
-aplicando noções básicas de cálculo e comparação de preços.`,
+aplicando noções básicas de cálculo e comparação de preços. (página 43)`,
   },
   {
     title: "Capítulo 4 — O que quero comprar?",
     content: `
-Os alunos escolhem um produto que desejam comprar com o dinheiro, estimulando autonomia e discernimento.`,
+Os alunos escolhem um produto que desejam comprar com o dinheiro, estimulando autonomia e discernimento. (página 65)`,
   },
   {
     title: "Capítulo 5 — Anúncio de promoção",
     content: `
-Os alunos pesquisam promoções no dia a dia, para entender como funcionam e quais estratégias são usadas para atrair consumidores.`,
+Os alunos pesquisam promoções no dia a dia, para entender como funcionam e quais estratégias são usadas para atrair consumidores. (página 75)`,
   },
   {
     title: "Capítulo 5 — Anúncio de parcelamento",
     content: `
-Os alunos pesquisam exemplos de parcelamento e refletem sobre as vantagens e cuidados ao comprar dessa forma.`,
+Os alunos pesquisam exemplos de parcelamento e refletem sobre as vantagens e cuidados ao comprar dessa forma. (página 82)`,
   },
   {
     title: "Capítulo 6 — Reciclar garrafas de plástico",
     content: `
 Os alunos devem separar garrafas plásticas usadas em casa, lavá-las e levá-las à escola para coleta. 
-Em sala, calculam quantas garrafas juntaram e projetam o total até o fim do ano, promovendo educação ambiental e cálculo aplicado.`,
+Em sala, calculam quantas garrafas juntaram e projetam o total até o fim do ano, promovendo educação ambiental e cálculo aplicado. (página 93)`,
   },
   {
     title: "Capítulo 6 — Cartaz de economia",
     content: `
-Os alunos produzem um cartaz sobre economia e sustentabilidade, estimulando responsabilidade coletiva e hábitos conscientes.`,
+Os alunos produzem um cartaz sobre economia e sustentabilidade, estimulando responsabilidade coletiva e hábitos conscientes. (página 94)`,
   },
 ]
 
