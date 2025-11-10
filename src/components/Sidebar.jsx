@@ -12,6 +12,7 @@ const navigation = {
       { id: 'modulo-2-roteiro', title: 'Projetos desenvolvidos nos livros' },
       { id: 'modulo-2-passo', title: 'Projetos do livro' },
       { id: 'modulo-2-ppda', title: 'Atividades de Projeto do Livro' },
+      { id: 'ao-final', title: 'Ao final deste módulo...' },
       
     ]
   },

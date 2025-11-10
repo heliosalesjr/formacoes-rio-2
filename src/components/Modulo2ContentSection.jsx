@@ -9,6 +9,7 @@ import Link from "next/link"
 import Modulo2Passo from "./content/Modulo2Passo"
 import PageApresentacao1 from "./content/PageApresentacao1"
 import Modulo2PPDA from "./content/Modulo2PPDA"
+import Modulo2AoFinal from "./content/Modulo2AoFinal"
 
 export default function Modulo2ContentSection() {
     return (
@@ -36,7 +37,9 @@ export default function Modulo2ContentSection() {
                   <Modulo2Content />
                 </FadeInWhenVisible>
                 
-               
+               <FadeInWhenVisible>
+                <Modulo2AoFinal />
+               </FadeInWhenVisible>
                 
                 
                 
