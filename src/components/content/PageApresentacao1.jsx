@@ -60,7 +60,7 @@ const PageApresentacao1 = () => {
         <div className="relative w-full h-auto flex items-stretch">
           <div className="relative w-full h-full min-h-[350px] md:min-h-[100%] overflow-hidden rounded-xl shadow-lg">
             <Image
-              src="/capaz.png"
+              src="/4_e_5_books.png"
               alt="Imagem ilustrativa"
               fill
               className="object-cover object-center rounded-xl transition-transform duration-300 hover:scale-105"
