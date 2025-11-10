@@ -16,26 +16,22 @@ const atividades4ano = [
   {
     title: "Capítulo 1 — Exposição das profissões",
     content: `
-Os alunos fazem uma pesquisa sobre duas profissões diferentes, descrevendo suas funções e importância social. 
-A proposta estimula a valorização de todo tipo de trabalho e a compreensão das funções na sociedade. (página 8)`,
+Os alunos fazem uma pesquisa sobre duas profissões diferentes, descrevendo suas funções e importância social. A proposta estimula a valorização de todo tipo de trabalho e a compreensão das funções na sociedade. (página 8)`,
   },
   {
     title: "Capítulo 1 — Pesquisa de preços",
     content: `
-O objetivo desta atividade é comparar os preços dos itens da padaria mencionados na aula com os preços reais de uma padaria local, 
-entendendo a dinâmica dos preços. (página 12)`,
+O objetivo desta atividade é comparar os preços dos itens da padaria mencionados na aula com os preços reais de uma padaria local, entendendo a dinâmica dos preços. (página 12)`,
   },
   {
     title: "Capítulo 1 — Entrevistando um adulto",
     content: `
-Os alunos entrevistam um adulto sobre sua profissão, registrando as respostas em um roteiro de perguntas. 
-A ideia é compreender a rotina profissional e o valor social do trabalho, exercitando oralidade, escuta e escrita. (página 25)`,
+Os alunos entrevistam um adulto sobre sua profissão, registrando as respostas em um roteiro de perguntas. A ideia é compreender a rotina profissional e o valor social do trabalho, exercitando oralidade, escuta e escrita. (página 25)`,
   },
   {
     title: "Capítulo 2 — Encarte de preços",
     content: `
-Os estudantes pesquisam preços de produtos ou alimentos para comparar valores e refletir sobre diferenças de custo e escolhas de consumo consciente, 
-aplicando noções básicas de cálculo e comparação de preços. (página 43)`,
+Os estudantes pesquisam preços de produtos ou alimentos para comparar valores e refletir sobre diferenças de custo e escolhas de consumo consciente, aplicando noções básicas de cálculo e comparação de preços. (página 43)`,
   },
   {
     title: "Capítulo 4 — O que quero comprar?",
@@ -55,8 +51,7 @@ Os alunos pesquisam exemplos de parcelamento e refletem sobre as vantagens e cui
   {
     title: "Capítulo 6 — Reciclar garrafas de plástico",
     content: `
-Os alunos devem separar garrafas plásticas usadas em casa, lavá-las e levá-las à escola para coleta. 
-Em sala, calculam quantas garrafas juntaram e projetam o total até o fim do ano, promovendo educação ambiental e cálculo aplicado. (página 93)`,
+Os alunos devem separar garrafas plásticas usadas em casa, lavá-las e levá-las à escola para coleta. Em sala, calculam quantas garrafas juntaram e projetam o total até o fim do ano, promovendo educação ambiental e cálculo aplicado. (página 93)`,
   },
   {
     title: "Capítulo 6 — Cartaz de economia",
@@ -70,50 +65,32 @@ const atividades5ano = [
   {
     title: "Capítulo 2 — Pesquisa de preços",
     content: `
-O projeto convida os alunos a iniciarem a organização de uma festa de aniversário da turma. 
-Eles precisam realizar uma pesquisa de preços em dois mercados diferentes, registrando tudo o que descobrirem. 
-A atividade introduz, na prática, o conceito de comparação de preços e mostra como esse hábito ajuda a tomar decisões de compra mais conscientes e econômicas. 
-(página 26)`,
+O projeto convida os alunos a iniciarem a organização de uma festa de aniversário da turma. Eles precisam realizar uma pesquisa de preços em dois mercados diferentes, registrando tudo o que descobrirem. A atividade introduz, na prática, o conceito de comparação de preços e mostra como esse hábito ajuda a tomar decisões de compra mais conscientes e econômicas. (página 26)`,
   },
   {
     title: "Capítulo 3 — Embalagem grande ou pequena?",
     content: `
-Os alunos devem visitar um mercado para comparar preços e tamanhos de embalagens do mesmo produto, 
-observando se compensa mais comprar a versão grande ou a pequena. 
-Eles anotam marca, peso/volume e preço de achocolatado e refrigerantes, comparando produtos iguais sempre que possível. 
-(Página 42)`,
+Os alunos devem visitar um mercado para comparar preços e tamanhos de embalagens do mesmo produto, observando se compensa mais comprar a versão grande ou a pequena. Eles anotam marca, peso/volume e preço de achocolatado e refrigerantes, comparando produtos iguais sempre que possível. (Página 42)`,
   },
   {
     title: "Capítulo 4 — Dividindo com os amigos",
     content: `
-Nesta etapa do projeto da festa, os alunos aprendem a planejar a quantidade de comida e bebida necessária para todos os participantes. 
-Eles escolhem um salgado, um doce e uma bebida e registram no quadro. 
-Depois, definem a quantidade por estudante e multiplicam pelos participantes, calculando a quantidade total a ser comprada. 
-(Página 48)`,
+Nesta etapa do projeto da festa, os alunos aprendem a planejar a quantidade de comida e bebida necessária para todos os participantes. Eles escolhem um salgado, um doce e uma bebida e registram no quadro. Depois, definem a quantidade por estudante e multiplicam pelos participantes, calculando a quantidade total a ser comprada. (Página 48)`,
   },
   {
     title: "Capítulo 4 — O orçamento da festa",
     content: `
-A turma define, junto com a professora, um valor total de orçamento para a festa. 
-Em grupos, escolhem comidas, bebidas, ingredientes e quantidades, pesquisam preços e montam suas tabelas de orçamento, cuidando para não ultrapassar o limite. 
-Depois, apresentam e decidem se combinam ideias ou votam em um único orçamento coletivo. 
-(Página 56)`,
+A turma define, junto com a professora, um valor total de orçamento para a festa. Em grupos, escolhem comidas, bebidas, ingredientes e quantidades, pesquisam preços e montam suas tabelas de orçamento, cuidando para não ultrapassar o limite. Depois, apresentam e decidem se combinam ideias ou votam em um único orçamento coletivo. (Página 56)`,
   },
   {
     title: "Capítulo 5 — Criando minha própria loja",
     content: `
-Os alunos imaginam que possuem sua própria loja, escolhem o que gostariam de vender e criam um cartaz ilustrando sua loja e produtos. 
-Depois, conversam com colegas sobre outras ideias de negócio, anotam cinco sugestões e circulam a que mais chamou sua atenção. 
-A proposta estimula criatividade, visão empreendedora e troca de ideias. 
-(Página 75)`,
+Os alunos imaginam que possuem sua própria loja, escolhem o que gostariam de vender e criam um cartaz ilustrando sua loja e produtos. Depois, conversam com colegas sobre outras ideias de negócio, anotam cinco sugestões e circulam a que mais chamou sua atenção. A proposta estimula criatividade, visão empreendedora e troca de ideias. (Página 75)`,
   },
   {
     title: "Capítulo 6 — Exposição das propagandas",
     content: `
-Após produzirem diversas propagandas ao longo do ano, os alunos organizam uma exposição com as peças criadas. 
-Definem data, local e forma de organização (por tema, ordem cronológica ou outro critério). 
-Depois, criam um cartaz de divulgação e espalham pela escola, convidando a comunidade. 
-(Página 90)`,
+Após produzirem diversas propagandas ao longo do ano, os alunos organizam uma exposição com as peças criadas. Definem data, local e forma de organização (por tema, ordem cronológica ou outro critério). Depois, criam um cartaz de divulgação e espalham pela escola, convidando a comunidade. (Página 90)`,
   },
 ]
 
