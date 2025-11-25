@@ -3,6 +3,7 @@ import FadeInWhenVisible from "./FadeInWhenVisible"
 import Link from "next/link"
 
 import MatrizIntro from "./content/MatrizIntro"
+import Matriz2 from "./content/Matriz2"
 
 
 export default function Matriz() {
@@ -14,7 +15,7 @@ export default function Matriz() {
             
               <MatrizIntro />
             
-
+              <Matriz2 />
      
             
             <div className="flex justify-center mt-8">

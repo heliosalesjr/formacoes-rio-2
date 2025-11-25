@@ -38,7 +38,7 @@ const MatrizIntro = () => {
       <div className="flex items-center justify-center gap-3 mb-8">
         
         <h2 className="text-2xl md:text-4xl font-bold text-center bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
-          Matriz de habilidades
+          Quadro Geral
         </h2>
         
       </div>
