@@ -4,6 +4,7 @@ import Link from "next/link"
 
 import MatrizIntro from "./content/MatrizIntro"
 import Matriz2 from "./content/Matriz2"
+import Matriz5 from "./content/Matriz5"
 
 
 export default function Matriz() {
@@ -16,7 +17,7 @@ export default function Matriz() {
               <MatrizIntro />
             
               <Matriz2 />
-     
+              <Matriz5 />
             
             <div className="flex justify-center mt-8">
               <Button asChild>
