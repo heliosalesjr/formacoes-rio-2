@@ -56,7 +56,7 @@ const MatrizSmart = () => {
 
         <div className="flex justify-center my-6">
           <Image
-            src="/smart.png"
+            src="/SMART.png"
             alt="Imagem da ferramenta SMART"
             width={800}
             height={600}
