@@ -3,12 +3,14 @@
 import { useEffect, useRef } from "react";
 import { useSidebar } from "@/contexts/SidebarContext";
 import { FaCheckCircle } from "react-icons/fa";
+import Image from 'next/image'
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import next from "next";
 
 
 const objetivosBNCC = [
@@ -192,17 +194,27 @@ export default function Matriz5() {
       className="scroll-mt-20 bg-white border border-slate-200 rounded-2xl shadow-xl p-8 space-y-10"
     >
       <div className="text-center space-y-2">
-        <h1 className="text-4xl font-bold text-blue-700">Matriz de Habilidades</h1>
+        <h1 className="text-4xl font-bold text-slate-600">Matriz de Habilidades</h1>
+        <div className="flex justify-center">
+                    <div className="relative w-96 h-80 rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105">
+                          <Image
+                            src="/livros5o.png"
+                            alt="Livros do 5º ano"
+                            fill
+                            className="object-contain"
+                          />
+                    </div>
+        </div>
         <p className="text-slate-600 text-xl font-bold pt-4">5º ano — Parte 1</p>
       </div>
 
       <TooltipProvider>
         {/* 📊 TABELA BNCC */}
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-blue-700 text-center">BNCC</h2>
+          <h2 className="text-2xl font-bold text-cyan-700 text-center">BNCC</h2>
           <div className="overflow-auto rounded-xl border bg-slate-50">
             <table className="w-full text-left text-sm md:text-base">
-              <thead className="bg-blue-100 text-blue-700 font-semibold">
+              <thead className="bg-purple-100 text-cyan-700 font-semibold">
                 <tr>
                   <th className="p-3">Objetivo de Conhecimento</th>
                   {[1, 2, 3, 4].map((n) => (
@@ -222,11 +234,11 @@ export default function Matriz5() {
 
               <tbody className="divide-y divide-slate-200">
                 {objetivosBNCC.map((obj, i) => (
-                  <tr key={i} className="hover:bg-blue-50/40 transition">
+                  <tr key={i} className="hover:bg-purple-50/40 transition">
                     <td className="p-3">
                       <span className="font-medium text-slate-800">{obj.label}</span>
                       {obj.code && (
-                        <span className="text-blue-600 font-semibold ml-2">
+                        <span className="text-purple-600 font-semibold ml-2">
                           ({obj.code})
                         </span>
                       )}
@@ -235,7 +247,7 @@ export default function Matriz5() {
                     {[1, 2, 3, 4].map((cap) => (
                       <td key={cap} className="p-3 text-center">
                         {obj.caps.includes(cap) && (
-                          <FaCheckCircle className="text-emerald-500 mx-auto" />
+                          <FaCheckCircle className="text-green-500 mx-auto" />
                         )}
                       </td>
                     ))}
@@ -248,10 +260,10 @@ export default function Matriz5() {
 
         {/* 📊 TABELA TESOURO NACIONAL */}
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-emerald-700 text-center">Habilidades Tesouro Nacional</h2>
+          <h2 className="text-2xl font-bold text-cyan-700 text-center">Habilidades Tesouro Nacional</h2>
           <div className="overflow-auto rounded-xl border bg-slate-50">
             <table className="w-full text-left text-sm md:text-base">
-              <thead className="bg-emerald-100 text-emerald-700 font-semibold">
+              <thead className="bg-cyan-100 text-cyan-700 font-semibold">
                 <tr>
                   <th className="p-3">Objetivo de Conhecimento</th>
                   {[1, 2, 3, 4].map((n) => (
@@ -271,11 +283,11 @@ export default function Matriz5() {
 
               <tbody className="divide-y divide-slate-200">
                 {habilidadesTN.map((obj, i) => (
-                  <tr key={i} className="hover:bg-emerald-50/40 transition">
+                  <tr key={i} className="hover:bg-cyan-50/40 transition">
                     <td className="p-3">
                       <span className="font-medium text-slate-800">{obj.label}</span>
                       {obj.code && (
-                        <span className="text-emerald-600 font-semibold ml-2">
+                        <span className="text-cyan-600 font-semibold ml-2">
                           ({obj.code})
                         </span>
                       )}
@@ -284,7 +296,7 @@ export default function Matriz5() {
                     {[1, 2, 3, 4].map((cap) => (
                       <td key={cap} className="p-3 text-center">
                         {obj.caps.includes(cap) && (
-                          <FaCheckCircle className="text-emerald-500 mx-auto" />
+                          <FaCheckCircle className="text-green-500 mx-auto" />
                         )}
                       </td>
                     ))}
@@ -297,21 +309,31 @@ export default function Matriz5() {
       </TooltipProvider>
 
       {/* DIVISOR PARTES 2 E 3 */}
-      <div className="text-center space-y-2 pt-8 border-t-2 border-slate-300">
+      <div className="text-center space-y-2 pt-8  border-slate-300">
+        <div className="flex justify-center">
+                    <div className="relative w-96 h-80 rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105">
+                          <Image
+                            src="/livros5o.png"
+                            alt="Livros do 5º ano"
+                            fill
+                            className="object-contain"
+                          />
+                    </div>
+        </div>
         <p className="text-slate-600 text-xl font-bold pt-4">5º ano — Partes 2 e 3</p>
       </div>
 
       <TooltipProvider>
         {/* 📊 TABELA BNCC - PARTE 2 */}
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-blue-700 text-center">BNCC</h2>
+          <h2 className="text-2xl font-bold text-cyan-700 text-center">BNCC</h2>
           <div className="overflow-auto rounded-xl border bg-slate-50">
             <table className="w-full text-left text-sm md:text-base">
-              <thead className="bg-blue-100 text-blue-700 font-semibold">
+              <thead className="bg-purple-100 text-cyan-700 font-semibold">
                 <tr>
                   <th className="p-3">Objetivo de Conhecimento</th>
                   {[5, 6, 7].map((n) => (
-                    <th key={n} className={`p-3 text-center ${n === 7 ? 'bg-orange-100 text-orange-700' : ''}`}>
+                    <th key={n} className={`p-3 text-center ${n === 7 ? 'bg-orange-100 text-cyan-700' : ''}`}>
                       <Tooltip>
                         <TooltipTrigger asChild>
                           <span className="cursor-help">Cap. {n}</span>
@@ -327,11 +349,11 @@ export default function Matriz5() {
 
               <tbody className="divide-y divide-slate-200">
                 {objetivosBNCC_parte2.map((obj, i) => (
-                  <tr key={i} className="hover:bg-blue-50/40 transition">
+                  <tr key={i} className="hover:bg-purple-50/40 transition">
                     <td className="p-3">
                       <span className="font-medium text-slate-800">{obj.label}</span>
                       {obj.code && (
-                        <span className="text-blue-600 font-semibold ml-2">
+                        <span className="text-purple-600 font-semibold ml-2">
                           ({obj.code})
                         </span>
                       )}
@@ -340,7 +362,7 @@ export default function Matriz5() {
                     {[5, 6, 7].map((cap) => (
                       <td key={cap} className={`p-3 text-center ${cap === 7 ? 'bg-orange-50' : ''}`}>
                         {obj.caps.includes(cap) && (
-                          <FaCheckCircle className="text-emerald-500 mx-auto" />
+                          <FaCheckCircle className="text-green-500 mx-auto" />
                         )}
                       </td>
                     ))}
@@ -353,14 +375,14 @@ export default function Matriz5() {
 
         {/* 📊 TABELA TESOURO NACIONAL - PARTE 2 */}
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-emerald-700 text-center">Habilidades Tesouro Nacional</h2>
+          <h2 className="text-2xl font-bold text-cyan-700 text-center">Habilidades Tesouro Nacional</h2>
           <div className="overflow-auto rounded-xl border bg-slate-50">
             <table className="w-full text-left text-sm md:text-base">
-              <thead className="bg-emerald-100 text-emerald-700 font-semibold">
+              <thead className="bg-cyan-100 text-cyan-700 font-semibold">
                 <tr>
                   <th className="p-3">Objetivo de Conhecimento</th>
                   {[5, 6, 7].map((n) => (
-                    <th key={n} className={`p-3 text-center ${n === 7 ? 'bg-orange-100 text-orange-700' : ''}`}>
+                    <th key={n} className={`p-3 text-center ${n === 7 ? 'bg-orange-100 text-cyan-700' : ''}`}>
                       <Tooltip>
                         <TooltipTrigger asChild>
                           <span className="cursor-help">Cap. {n}</span>
@@ -376,11 +398,11 @@ export default function Matriz5() {
 
               <tbody className="divide-y divide-slate-200">
                 {habilidadesTN_parte2.map((obj, i) => (
-                  <tr key={i} className="hover:bg-emerald-50/40 transition">
+                  <tr key={i} className="hover:bg-cyan-50/40 transition">
                     <td className="p-3">
                       <span className="font-medium text-slate-800">{obj.label}</span>
                       {obj.code && (
-                        <span className="text-emerald-600 font-semibold ml-2">
+                        <span className="text-cyan-600 font-semibold ml-2">
                           ({obj.code})
                         </span>
                       )}
@@ -389,7 +411,7 @@ export default function Matriz5() {
                     {[5, 6, 7].map((cap) => (
                       <td key={cap} className={`p-3 text-center ${cap === 7 ? 'bg-orange-50' : ''}`}>
                         {obj.caps.includes(cap) && (
-                          <FaCheckCircle className="text-emerald-500 mx-auto" />
+                          <FaCheckCircle className="text-green-500 mx-auto" />
                         )}
                       </td>
                     ))}

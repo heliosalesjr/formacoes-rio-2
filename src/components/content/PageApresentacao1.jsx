@@ -42,8 +42,7 @@ const PageApresentacao1 = () => {
             o Módulo 2 aprofunda o trabalho com os conceitos de educação financeira na prática pedagógica, 
             explorando novas abordagens para o ensino da Matemática de forma significativa e contextualizada. 
             Esta formação integra as ações de acompanhamento pedagógico promovidas pela{' '}
-            <span className="font-semibold">BEĨ Educação</span>, em parceria com a Secretaria de Estado de 
-            Educação do Rio de Janeiro, e é voltada aos professores do 4º e 5º ano do Ensino Fundamental I.
+            <span className="font-semibold">BEĨ Educação</span>, em parceria com a Secretaria de Educação do Município do Rio de Janeiro, e é voltada aos professores do 4º e 5º ano do Ensino Fundamental I.
           </p>
 
           <p className="text-slate-700 text-lg leading-relaxed">

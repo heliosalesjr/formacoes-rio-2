@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useRef } from 'react'
 import { useSidebar } from '@/contexts/SidebarContext'
+import Image from 'next/image'
 
 import {
   Accordion,
@@ -124,7 +125,7 @@ export default function Modulo2Content() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <Card className="w-full bg-white rounded-2xl shadow-2xl border border-blue-100">
+        <Card className="w-full bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-visible">
           <CardHeader className="text-center">
             <CardTitle className="text-2xl sm:text-4xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
               Atividades de Projeto do Livro
@@ -135,51 +136,79 @@ export default function Modulo2Content() {
             </p>
           </CardHeader>
 
-          <CardContent className="py-8 space-y-12">
+          <CardContent className="py-8 px-4 space-y-12 overflow-visible">
             {/* --- Atividades do 4º ano --- */}
-            <div>
-              <h3 className="text-2xl font-semibold text-blue-600 text-center mb-6">
+            <div className="pb-4 overflow-visible">
+              {/* Imagem do 4º ano */}
+              <div className="flex justify-center mb-8">
+                <div className="relative w-80 h-64 rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105">
+                  <Image
+                    src="/livros4o.png"
+                    alt="Livros do 4º ano"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              </div>
+
+              <h3 className="text-3xl font-bold text-red-600 text-center mb-6">
                 Atividades do 4º ano
               </h3>
-              <Accordion type="multiple" className="space-y-3">
-                {atividades4ano.map((item, i) => (
-                  <AccordionItem
-                    key={i}
-                    value={`ano4-item-${i}`}
-                    className="border border-blue-100 rounded-lg"
-                  >
-                    <AccordionTrigger className="text-left font-semibold text-slate-800 text-lg px-4 py-3 hover:bg-blue-50 rounded-md">
-                      {item.title}
-                    </AccordionTrigger>
-                    <AccordionContent className="px-4 py-4 text-slate-700 leading-relaxed whitespace-pre-line text-[1rem]">
-                      {item.content}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
+              <div className="p-2 pb-4">
+                <Accordion type="multiple" className="space-y-3">
+                  {atividades4ano.map((item, i) => (
+                    <AccordionItem
+                      key={i}
+                      value={`ano4-item-${i}`}
+                      className="border-2 border-red-200 rounded-lg hover:border-red-300 transition-colors"
+                    >
+                      <AccordionTrigger className="text-left font-semibold text-slate-800 text-lg px-4 py-3 hover:bg-orange-50 rounded-md transition-colors">
+                        {item.title}
+                      </AccordionTrigger>
+                      <AccordionContent className="px-4 py-4 text-slate-700 leading-relaxed whitespace-pre-line text-[1rem] bg-gradient-to-b from-orange-50/30 to-transparent">
+                        {item.content}
+                      </AccordionContent>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </div>
             </div>
 
             {/* --- Atividades do 5º ano --- */}
-            <div>
-              <h3 className="text-2xl font-semibold text-green-600 text-center mb-6">
+            <div className="pb-4 overflow-visible">
+              {/* Imagem do 5º ano */}
+              <div className="flex justify-center mb-8">
+                <div className="relative w-80 h-64 rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105">
+                  <Image
+                    src="/livros5o.png"
+                    alt="Livros do 5º ano"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              </div>
+
+              <h3 className="text-3xl font-bold text-purple-700 text-center mb-6">
                 Atividades do 5º ano
               </h3>
-              <Accordion type="multiple" className="space-y-3">
-                {atividades5ano.map((item, i) => (
-                  <AccordionItem
-                    key={i}
-                    value={`ano5-item-${i}`}
-                    className="border border-green-100 rounded-lg"
-                  >
-                    <AccordionTrigger className="text-left font-semibold text-slate-800 text-lg px-4 py-3 hover:bg-green-50 rounded-md">
-                      {item.title}
-                    </AccordionTrigger>
-                    <AccordionContent className="px-4 py-4 text-slate-700 leading-relaxed whitespace-pre-line text-[1rem]">
-                      {item.content}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
+              <div className="p-2 pb-4">
+                <Accordion type="multiple" className="space-y-3">
+                  {atividades5ano.map((item, i) => (
+                    <AccordionItem
+                      key={i}
+                      value={`ano5-item-${i}`}
+                      className="border-2 border-purple-200 rounded-lg hover:border-purple-300 transition-colors"
+                    >
+                      <AccordionTrigger className="text-left font-semibold text-slate-800 text-lg px-4 py-3 hover:bg-blue-50 rounded-md transition-colors">
+                        {item.title}
+                      </AccordionTrigger>
+                      <AccordionContent className="px-4 py-4 text-slate-700 leading-relaxed whitespace-pre-line text-[1rem] bg-gradient-to-b from-blue-50/30 to-transparent">
+                        {item.content}
+                      </AccordionContent>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </div>
             </div>
           </CardContent>
         </Card>
